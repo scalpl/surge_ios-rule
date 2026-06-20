@@ -25,7 +25,7 @@ IP-ASN + DEST-PORT 复合匹配
 Surge → **模块** → **安装新模块**：
 
 ```
-https://raw.githubusercontent.com/YOUR_USER/hoyoverse-surge/main/Hoyoverse_All.sgmodule
+https://raw.githubusercontent.com/scalpl/surge_ios-rule/main/module/Hoyoverse_All.sgmodule
 ```
 
 模块内容：
@@ -64,7 +64,7 @@ RULE-SET,"/path/Hoyoverse_Zenless.list",HOYOVERSE
 
 ```
 hoyoverse/
-├── Hoyoverse_All.sgmodule  ← 主模块（仅 3 行，引用风格）
+├── Hoyoverse_All.sgmodule  ← 主模块（3 行 IP-ASN + 端口复合规则）
 ├── Hoyoverse_IP.list       ← IP-ASN + 端口复合规则
 ├── Hoyoverse_Ports.list    ← 仅端口规则（兼容）
 ├── Hoyoverse_Common.list   ← 通用域名
@@ -74,25 +74,6 @@ hoyoverse/
 ├── Hoyoverse_Cloud.list    ← 云游戏域名
 └── README.md
 ```
-
----
-
-## 引用模块的原始风格
-
-原版 [Genshin.module](https://cdn.jsdelivr.net/gh/scalpelliu/surge_ios-rule@main/module/Genshin.module)：
-
-```
-#!name= Genshin
-#!desc= Genshin Impact Asia Server proxy
-[Rule]
-OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),
-    (AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22101)))),🇯🇵 Japan
-```
-
-- **AS45102** = 阿里云（国服/亚服）
-- **22101/22102** = 原神游戏会话端口
-
-本模块针对国际服 (OS) 改用 **AS16509 / AS14618 (AWS)**。
 
 ---
 
