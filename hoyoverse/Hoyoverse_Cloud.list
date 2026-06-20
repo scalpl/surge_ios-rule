@@ -1,0 +1,15 @@
+# HoYoverse International (OS) — Cloud gaming domains
+# Surge Rule Set
+#
+
+# Cloud Genshin
+DOMAIN,cgn-gi.hoyoverse.com
+
+# Cloud Star Rail
+DOMAIN,cgn-hsr.hoyoverse.com
+
+# Cloud Zenless
+DOMAIN,cgn-zzz.hoyoverse.com
+
+# WebSocket (all OS cloud games)
+DOMAIN-SUFFIX,cgn-ws.hoyoverse.com

@@ -1,0 +1,19 @@
+# HoYoverse International (OS) — DEST-PORT rules
+# Surge Rule Set
+#
+# Standalone port rules (without ASN filter).
+# Less precise than IP-ASN + DEST-PORT combined rules
+# but works on any Surge version.
+#
+# Usage:
+#   RULE-SET,"/path/Hoyoverse_Ports.list",HOYOVERSE
+#
+
+# Genshin Impact OS
+DEST-PORT,22102
+
+# Honkai: Star Rail OS
+DEST-PORT,23301
+
+# Zenless Zone Zero OS (TBD)
+# DEST-PORT,XXXX

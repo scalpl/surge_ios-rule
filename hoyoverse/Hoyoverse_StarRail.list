@@ -1,0 +1,19 @@
+# Honkai: Star Rail OS — Domain rules
+# Surge Rule Set
+#
+
+# Official site
+DOMAIN,hsr.hoyoverse.com
+
+# SDK
+DOMAIN,hkrpg-sdk-os.hoyoverse.com
+
+# API
+DOMAIN,hkrpg-api-os.hoyoverse.com
+
+# Dispatch
+DOMAIN,dispatchos.bhsr.com
+
+# Patch download
+DOMAIN-SUFFIX,autopatchos.bhsr.com
+DOMAIN-SUFFIX,autopatchhk.bhsr.com

@@ -1,0 +1,26 @@
+# HoYoverse International (OS) — Common domains
+# Surge Rule Set
+#
+# Account / SDK / Community
+#
+
+# Account
+DOMAIN,account.hoyoverse.com
+DOMAIN,api-account.hoyoverse.com
+
+# SDK
+DOMAIN,sdk.hoyoverse.com
+
+# Community
+DOMAIN-SUFFIX,bbs.hoyoverse.com
+DOMAIN-SUFFIX,bbs-api.hoyoverse.com
+
+# Payment
+DOMAIN,pay.hoyoverse.com
+
+# CDN / Static
+DOMAIN,webstatic.hoyoverse.com
+DOMAIN,upload.hoyoverse.com
+
+# Support
+DOMAIN-SUFFIX,support.hoyoverse.com

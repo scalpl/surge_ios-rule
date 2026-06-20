@@ -1,0 +1,6 @@
+#!name= HoYoverse International (OS)
+#!desc= Genshin Impact / Honkai Star Rail / Zenless Zone Zero - OS proxy module
+[Rule]
+# Genshin Impact & Honkai: Star Rail OS game session
+# AWS ASN 16509/14618 + game ports 22102/23301
+OR,((AND,((IP-ASN,16509,no-resolve), (DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve), (DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve), (DEST-PORT,23301))),(AND,((IP-ASN,14618,no-resolve), (DEST-PORT,23301)))),HOYOVERSE

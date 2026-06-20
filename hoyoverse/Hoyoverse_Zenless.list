@@ -1,0 +1,19 @@
+# Zenless Zone Zero OS — Domain rules
+# Surge Rule Set
+#
+
+# Official site
+DOMAIN,zenless.hoyoverse.com
+
+# SDK
+DOMAIN,nap-sdk-os.hoyoverse.com
+
+# API
+DOMAIN,nap-api-os.hoyoverse.com
+
+# Dispatch
+DOMAIN,dispatchos.zenlesszonezero.com
+
+# Patch download
+DOMAIN-SUFFIX,autopatchos.zenlesszonezero.com
+DOMAIN-SUFFIX,autopatchhk.zenlesszonezero.com

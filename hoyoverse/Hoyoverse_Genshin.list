@@ -1,0 +1,19 @@
+# Genshin Impact OS — Domain rules
+# Surge Rule Set
+#
+
+# Official site
+DOMAIN,genshin.hoyoverse.com
+
+# SDK
+DOMAIN,hk4e-sdk-os.hoyoverse.com
+
+# API
+DOMAIN,hk4e-api-os.hoyoverse.com
+
+# Dispatch
+DOMAIN,dispatchosglobal.yuanshen.com
+
+# Patch download
+DOMAIN-SUFFIX,autopatchos.yuanshen.com
+DOMAIN-SUFFIX,autopatchhk.yuanshen.com
