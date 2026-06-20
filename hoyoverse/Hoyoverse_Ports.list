@@ -15,5 +15,5 @@ DEST-PORT,22102
 # Honkai: Star Rail OS
 DEST-PORT,23301
 
-# Zenless Zone Zero OS (TBD)
-# DEST-PORT,XXXX
+# Zenless Zone Zero OS
+DEST-PORT,20501

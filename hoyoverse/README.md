@@ -12,9 +12,9 @@ IP-ASN + DEST-PORT 复合匹配
 
 | 游戏 | 端口 (UDP) | 服务器 ASN |
 |------|:-----------:|-----------|
-| 原神 (Genshin Impact) | **22102** | AS16509 / AS14618 (AWS) |
-| 星穹铁道 (HSR) | **23301** | AS16509 / AS14618 (AWS) |
-| 绝区零 (ZZZ) | 待确认 | AWS |
+| 原神 (Genshin Impact) | **22102** | AS45102 (阿里云) / AS16509+14618 (AWS) |
+| 星穹铁道 (HSR) | **23301** | AS45102 (阿里云) / AS16509+14618 (AWS) |
+| 绝区零 (ZZZ) | **20501** | AS45102 (阿里云) / AS16509+14618 (AWS) |
 
 ---
 
@@ -33,10 +33,12 @@ https://raw.githubusercontent.com/scalpl/surge_ios-rule/main/module/Hoyoverse_Al
 ```
 #!name= HoYoverse International (OS)
 [Rule]
-OR,((AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),
-    (AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102))),
-    (AND,((IP-ASN,16509,no-resolve),(DEST-PORT,23301))),
-    (AND,((IP-ASN,14618,no-resolve),(DEST-PORT,23301)))),HOYOVERSE
+# Genshin Impact OS: Alibaba AS45102 + AWS + port 22102
+OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102)))),HOYOVERSE
+# Honkai: Star Rail OS: Alibaba AS45102 + AWS + port 23301
+OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,23301))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,23301))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,23301)))),HOYOVERSE
+# Zenless Zone Zero OS: Alibaba AS45102 + AWS + port 20501
+OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,20501))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,20501))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,20501)))),HOYOVERSE
 ```
 
 ### 方式二：引用规则集
