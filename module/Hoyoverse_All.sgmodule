@@ -1,8 +1,8 @@
 #!name= HoYoverse International (OS)
 #!desc= Genshin Impact / Honkai Star Rail / Zenless Zone Zero - OS proxy module
 [Rule]
-# Genshin Impact OS: Alibaba AS45102 + AWS + port 22102
-OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102)))),HOYOVERSE
+# Genshin Impact OS: Alibaba AS45102 + AWS + ports 22101/22102
+OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22101))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22101))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22101)))),HOYOVERSE
 # Honkai: Star Rail OS: Alibaba AS45102 + AWS + port 23301
 OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,23301))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,23301))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,23301)))),HOYOVERSE
 # Zenless Zone Zero OS: Alibaba AS45102 + port 20501

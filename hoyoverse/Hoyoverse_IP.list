@@ -8,8 +8,8 @@
 #   RULE-SET,"/path/Hoyoverse_IP.list",HOYOVERSE
 #
 
-# Genshin Impact OS (port 22102 -> Alibaba + AWS)
-OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102)))),HOYOVERSE
+# Genshin Impact OS (ports 22101/22102 -> Alibaba + AWS)
+OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22101))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22101))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22101)))),HOYOVERSE
 
 # Honkai: Star Rail OS (port 23301 -> Alibaba + AWS)
 OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,23301))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,23301))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,23301)))),HOYOVERSE

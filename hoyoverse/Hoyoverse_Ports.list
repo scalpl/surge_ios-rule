@@ -10,6 +10,7 @@
 #
 
 # Genshin Impact OS
+DEST-PORT,22101
 DEST-PORT,22102
 
 # Honkai: Star Rail OS
