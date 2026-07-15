@@ -1,6 +1,17 @@
 #!name= HoYoverse International (OS)
-#!desc= Genshin Impact / Honkai Star Rail / Zenless Zone Zero - OS proxy module
+#!desc= HoYoPlay downloads and game connections for Genshin Impact / Honkai Star Rail / Zenless Zone Zero / Honkai Impact 3rd
 [Rule]
+# HoYoPlay package metadata and game update downloads
+DOMAIN,sg-hyp-api.hoyoverse.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchhk.yuanshen.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchos.starrails.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchos.zenlesszonezero.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchglb.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchos.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchjp.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchkr.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchasia.honkaiimpact3.com,HOYOVERSE
+
 # Genshin Impact OS: Alibaba AS45102 + AWS + ports 22101/22102
 OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22101))),(AND,((IP-ASN,16509,no-resolve),(DEST-PORT,22101))),(AND,((IP-ASN,14618,no-resolve),(DEST-PORT,22101)))),HOYOVERSE
 # Honkai: Star Rail OS: Alibaba AS45102 + AWS + port 23301

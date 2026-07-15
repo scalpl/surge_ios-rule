@@ -15,5 +15,6 @@ DOMAIN,hkrpg-api-os.hoyoverse.com
 DOMAIN,dispatchos.bhsr.com
 
 # Patch download
+DOMAIN-SUFFIX,autopatchos.starrails.com
 DOMAIN-SUFFIX,autopatchos.bhsr.com
 DOMAIN-SUFFIX,autopatchhk.bhsr.com

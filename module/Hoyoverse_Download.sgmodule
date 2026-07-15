@@ -1,0 +1,22 @@
+#!name= HoYoverse Game Updates (OS)
+#!desc= HoYoPlay metadata and update package downloads for Genshin Impact / Honkai: Star Rail / Zenless Zone Zero / Honkai Impact 3rd
+
+[Rule]
+# HoYoPlay package metadata
+DOMAIN,sg-hyp-api.hoyoverse.com,HOYOVERSE
+
+# Genshin Impact
+DOMAIN-SUFFIX,autopatchhk.yuanshen.com,HOYOVERSE
+
+# Honkai: Star Rail
+DOMAIN-SUFFIX,autopatchos.starrails.com,HOYOVERSE
+
+# Zenless Zone Zero
+DOMAIN-SUFFIX,autopatchos.zenlesszonezero.com,HOYOVERSE
+
+# Honkai Impact 3rd (Global / SEA / Japan / Korea / Taiwan)
+DOMAIN-SUFFIX,autopatchglb.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchos.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchjp.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchkr.honkaiimpact3.com,HOYOVERSE
+DOMAIN-SUFFIX,autopatchasia.honkaiimpact3.com,HOYOVERSE
