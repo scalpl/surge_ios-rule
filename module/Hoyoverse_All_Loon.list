@@ -1,8 +1,14 @@
 # 规则名称: HoYoverse 国际服
-# 规则统计: 12
+# 规则统计: 15
 # 游戏连接仅匹配阿里云 ASN 45102
 
-DOMAIN,sg-hyp-api.hoyoverse.com
+# 账号、SDK、官网、HoYoPlay、HoYoLAB 及官方短链接
+DOMAIN-SUFFIX,hoyoverse.com
+DOMAIN-SUFFIX,hoyolab.com
+DOMAIN-SUFFIX,genshinimpact.com
+DOMAIN-SUFFIX,hoyo.link
+
+# 游戏更新下载
 DOMAIN-SUFFIX,autopatchhk.yuanshen.com
 DOMAIN-SUFFIX,autopatchos.starrails.com
 DOMAIN-SUFFIX,autopatchos.zenlesszonezero.com
@@ -11,6 +17,7 @@ DOMAIN-SUFFIX,autopatchos.honkaiimpact3.com
 DOMAIN-SUFFIX,autopatchjp.honkaiimpact3.com
 DOMAIN-SUFFIX,autopatchkr.honkaiimpact3.com
 DOMAIN-SUFFIX,autopatchasia.honkaiimpact3.com
+# 游戏连接：阿里云 ASN 与目标端口
 OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22102))),(AND,((IP-ASN,45102,no-resolve),(DEST-PORT,22101))))
 OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,23301))))
 OR,((AND,((IP-ASN,45102,no-resolve),(DEST-PORT,20501))))
