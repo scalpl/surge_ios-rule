@@ -1,10 +1,9 @@
 # 规则名称: HoYoverse 国际服
-# 规则统计: 15
+# 规则统计: 14
 # 游戏连接仅匹配阿里云 ASN 45102
 
-# 账号、SDK、官网、HoYoPlay、HoYoLAB 及官方短链接
+# 账号、SDK、官网、HoYoPlay 及官方短链接
 DOMAIN-SUFFIX,hoyoverse.com
-DOMAIN-SUFFIX,hoyolab.com
 DOMAIN-SUFFIX,genshinimpact.com
 DOMAIN-SUFFIX,hoyo.link
 
